@@ -1,4 +1,4 @@
-package com.example;
+package com.staff;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
@@ -18,8 +18,15 @@ public class MyResource {
      * @return String that will be returned as a text/plain response.
      */
     @GET
+    @Path("hola")
     @Produces(MediaType.TEXT_PLAIN)
     public String getIt() {
         return "Got it!";
+    }
+    @GET
+    @Produces(MediaType.TEXT_HTML)
+    public String sayHtmlHello() {
+      return "<html> " + "<title>" + "Hello Jersey" + "</title>"
+          + "<body><h1>" + "Hello Jersey" + "</body></h1>" + "</html> ";
     }
 }
