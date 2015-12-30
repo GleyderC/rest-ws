@@ -1,4 +1,4 @@
-package com.staff;
+package com.staff.rest;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
